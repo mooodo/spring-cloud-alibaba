@@ -1,0 +1,7 @@
+/pom.xml
+/.idea
+/alibaba-demo-feign/target
+/alibaba-demo-ribbon/target
+/alibaba-demo-service/target
+/alibaba-demo-gateway/target
+/spring-cloud-alibaba.rar
