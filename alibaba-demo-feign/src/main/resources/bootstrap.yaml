@@ -1,0 +1,30 @@
+server:
+  port: 8765
+spring:
+  application:
+    name: service-feign
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        username: nacos
+        password: nacos
+    sentinel: 
+      transport: 
+        dashboard: localhost:8858
+      eager: true
+feign:
+  sentinel:
+    enabled: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+ribbon:
+  # NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+  ConnectTimeout: 250
+  ReadTimeout: 1000
+  MaxAutoRetries: 0 # default 0
+  MaxAutoRetriesNextServer: 2 # default 1
+  OkToRetryOnAllOperations: false # default false
