@@ -1,5 +1,5 @@
 server:
-  port: 8809
+  port: 8769
 spring:
   application:
     name: service-gateway
