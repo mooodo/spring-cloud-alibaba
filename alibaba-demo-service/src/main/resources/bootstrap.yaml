@@ -16,23 +16,6 @@ spring:
       transport: 
         dashboard: localhost:8858
       eager: true
-      datasource:
-        flow:
-          nacos:
-            server-addr: ${spring.cloud.nacos.discovery.server-addr}
-            dataId: ${spring.application.name}-flow-rules
-            groupId: DEFAULT_GROUP
-            rule-type: flow
-            username: ${spring.cloud.nacos.discovery.username}
-            password: ${spring.cloud.nacos.discovery.password}
-        degrade:
-          nacos:
-            server-addr: ${spring.cloud.nacos.discovery.server-addr}
-            dataId: ${spring.application.name}-degrade-rules
-            groupId: DEFAULT_GROUP
-            rule-type: degrade
-            username: ${spring.cloud.nacos.discovery.username}
-            password: ${spring.cloud.nacos.discovery.password}
 management:
   endpoints:
     web:
