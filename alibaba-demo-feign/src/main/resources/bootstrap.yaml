@@ -20,7 +20,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: '*'
+        include: '/actuator/sentinel'
 ribbon:
   # NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
   ConnectTimeout: 250

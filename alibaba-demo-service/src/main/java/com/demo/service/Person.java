@@ -3,47 +3,15 @@
  */
 package com.demo.service;
 
+import lombok.Data;
+import lombok.extern.slf4j.Slf4j;
+
 /**
  * @author fangang
  */
+@Data
 public class Person {
 	private int id;
 	private String name;
 	private String gender;
-	/**
-	 * @return the id
-	 */
-	public int getId() {
-		return id;
-	}
-	/**
-	 * @param id the id to set
-	 */
-	public void setId(int id) {
-		this.id = id;
-	}
-	/**
-	 * @return the name
-	 */
-	public String getName() {
-		return name;
-	}
-	/**
-	 * @param name the name to set
-	 */
-	public void setName(String name) {
-		this.name = name;
-	}
-	/**
-	 * @return the gender
-	 */
-	public String getGender() {
-		return gender;
-	}
-	/**
-	 * @param gender the gender to set
-	 */
-	public void setGender(String gender) {
-		this.gender = gender;
-	}
 }
