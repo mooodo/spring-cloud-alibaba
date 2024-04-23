@@ -17,7 +17,7 @@ public class TokenFilter implements GlobalFilter, Ordered {
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
         ServerHttpRequest request = exchange.getRequest();
         String token = request.getHeaders().getFirst("token");
-        if(token==null||token.equals("")) return unauthorized(exchange);
+        if(token==null|| token.isEmpty()) return unauthorized(exchange);
         //valid whither the token has authority.
         return chain.filter(exchange);
     }
